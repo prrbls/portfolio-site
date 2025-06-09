@@ -28,9 +28,16 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Updated project section with CSS grid */
+.project {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three images per row */
+    gap: 10px;
+    justify-content: center;
+}
+
 .project img {
-    width: 200px;
-    margin: 10px;
+    width: 100%;
     border-radius: 5px;
     box-shadow: 0px 0px 10px #00ff99;
 }
@@ -38,6 +45,7 @@ a:hover {
 .project p {
     font-style: italic;
     color: #b3b3b3;
+    grid-column: span 3; /* Ensures the description spans across the row */
 }
 
 /* Responsive Design */
@@ -50,12 +58,17 @@ a:hover {
         width: 120px;
     }
 
+    .project {
+        grid-template-columns: repeat(2, 1fr); /* Adjust layout for smaller screens */
+    }
+
     .project img {
-        width: 150px;
+        width: 100%;
     }
 
     .project p {
         font-size: 14px;
+        grid-column: span 2;
     }
 }
 
@@ -68,10 +81,16 @@ a:hover {
         font-size: 20px;
     }
 
+    .project {
+        grid-template-columns: repeat(1, 1fr); /* Stacks images vertically on very small screens */
+    }
+
     .project img {
-        width: 120px;
+        width: 100%;
     }
 
     .project p {
         font-size: 12px;
+        grid-column: span 1;
     }
+}
