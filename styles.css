@@ -1,5 +1,7 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Courier New', monospace;
+    background-color: #121212;
+    color: #ffffff;
     text-align: center;
     margin: 0;
     padding: 20px;
@@ -9,13 +11,67 @@ header img {
     width: 150px;
     border-radius: 50%;
     margin: 10px;
+    border: 2px solid #00ff99; /* Cyberpunk-style accent */
 }
 
 .contact, .projects {
     margin-top: 30px;
 }
 
+a {
+    color: #00ff99;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 .project img {
     width: 200px;
     margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #00ff99;
 }
+
+.project p {
+    font-style: italic;
+    color: #b3b3b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    header img {
+        width: 120px;
+    }
+
+    .project img {
+        width: 150px;
+    }
+
+    .project p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    header img {
+        width: 100px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .project img {
+        width: 120px;
+    }
+
+    .project p {
+        font-size: 12px;
+    }
