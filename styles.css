@@ -38,7 +38,7 @@ a:hover {
 }
 
 .project img {
-    max-width: 80%; /* Reduces the image size for better balance */
+    max-width: 50%; /* Reduces the image size for better balance */
     display: block;
     margin: 0 auto; /* Centers images */
     border-radius: 5px;
